@@ -1,0 +1,23 @@
+.container {
+    background-color: gray;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px hsl(0, 0%, 100%);
+    width: 500px; /* Aumenta el ancho del contenedor para acomodar los elementos en línea */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
+}
+
+.container label,
+.container input,
+.container select,
+.container button {
+    width: calc(48% - 10px); /* Establece el ancho de los elementos internos */
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%; /* Ajusta el ancho del botón para llenar el contenedor */
+}
